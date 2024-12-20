@@ -12,7 +12,12 @@
   <Section Name="Input" />
   <Section Name="Output" />
   <Section Name="InOut" />
-  <Section Name="Temp" />
+  <Section Name="Temp">
+    <Member Name="testCond1" Datatype="Bool" />
+    <Member Name="testCond2" Datatype="Bool" />
+    <Member Name="testCond3" Datatype="Bool" />
+    <Member Name="testCond4" Datatype="Bool" />
+  </Section>
   <Section Name="Constant" />
   <Section Name="Return">
     <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
@@ -43,8 +48,37 @@
   <StlStatement UId="21">
     <StlToken Text="NOP_0" />
   </StlStatement>
+  <StlStatement UId="23">
+    <StlToken Text="A" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="testCond1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="O" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="testCond2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
   <StlStatement UId="22">
-    <StlToken Text="EMPTY_LINE" />
+    <StlToken Text="O" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="testCond3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="28">
+    <StlToken Text="Assign" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="testCond4" />
+      </Symbol>
+    </Access>
   </StlStatement>
 </StatementList></NetworkSource>
           <ProgrammingLanguage>STL</ProgrammingLanguage>
