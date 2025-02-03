@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="temp_R" Datatype="Real" />
+    <Member Name="temp_Rg" Datatype="Real" />
+    <Member Name="temp_W" Datatype="Word" />
+    <Member Name="temp_Rg1" Datatype="Real" />
+    <Member Name="temp_Rg2_1" Datatype="Real" />
+    <Member Name="temp_Rg3_1" Datatype="Real" />
+    <Member Name="temp_Rg3_2" Datatype="Real" />
+    <Member Name="temp_real" Datatype="Real" />
+    <Member Name="temp_real_1" Datatype="Real" />
+    <Member Name="temp_real_2" Datatype="Real" />
+    <Member Name="temp_real_3" Datatype="Real" />
+    <Member Name="temp_real_4" Datatype="Real" />
+    <Member Name="temp_real_5" Datatype="Real" />
+    <Member Name="temp_real_6" Datatype="Real" />
+    <Member Name="temp_real_7" Datatype="Real" />
+    <Member Name="temp_real_8" Datatype="Real" />
+    <Member Name="temp_real_9" Datatype="Real" />
+    <Member Name="temp_B" Datatype="Bool" />
+    <Member Name="temp_start" Datatype="Bool" />
+    <Member Name="temp_Rg2" Datatype="Real" />
+    <Member Name="temp_W1" Datatype="Int" />
+    <Member Name="temp_Rg3" Datatype="Real" />
+    <Member Name="Param_SetBit_0" Datatype="Bool" />
+    <Member Name="Param_SetBit_1" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Tag_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="temp_B" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="temp_B" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Tag_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>500</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="temp_R" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="temp_Rg" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="temp_Rg2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="temp_Rg1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="temp_Rg3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="temp_Rg2_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="temp_Rg3_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="temp_Rg3_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="temp_W" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="temp_B" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="temp_start" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="temp_real" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="temp_real_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="temp_real_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="temp_real_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="temp_real_5" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="temp_real_6" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="temp_real_7" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="temp_real_8" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="45">
+      <Symbol>
+        <Component Name="temp_real_9" />
+      </Symbol>
+    </Access>
+    <Call UId="46">
+      <CallInfo Name="fcDanfoss_Inv" BlockType="FC">
+        <Parameter Name="Setpoint" Section="Input" Type="Real" />
+        <Parameter Name="ParamSetBit_0" Section="Input" Type="Bool" />
+        <Parameter Name="ParamSetBit_1" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="ADDR" Section="Input" Type="Int" />
+        <Parameter Name="Conv_Curr" Section="Input" Type="Real" />
+        <Parameter Name="Conv_RPM" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Power" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Freq" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Res1" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Res2" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Res3" Section="Input" Type="Real" />
+        <Parameter Name="Conv_Res4" Section="Input" Type="Real" />
+        <Parameter Name="STATUS_WORD" Section="Output" Type="Word" />
+        <Parameter Name="INV_OK" Section="Output" Type="Bool" />
+        <Parameter Name="FB_RUN" Section="Output" Type="Bool" />
+        <Parameter Name="HMI_Efficiency" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Current" Section="Output" Type="Real" />
+        <Parameter Name="HMI_RPM" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Power" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Frequency" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Res1" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Res2" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Res3" Section="Output" Type="Real" />
+        <Parameter Name="HMI_Res4" Section="Output" Type="Real" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="47">
+      <Powerrail />
+      <NameCon UId="46" Name="en" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="21" />
+      <NameCon UId="46" Name="Setpoint" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="22" />
+      <NameCon UId="46" Name="ParamSetBit_0" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="23" />
+      <NameCon UId="46" Name="ParamSetBit_1" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="24" />
+      <NameCon UId="46" Name="Start" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="25" />
+      <NameCon UId="46" Name="ADDR" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="26" />
+      <NameCon UId="46" Name="Conv_Curr" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="27" />
+      <NameCon UId="46" Name="Conv_RPM" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="28" />
+      <NameCon UId="46" Name="Conv_Power" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="29" />
+      <NameCon UId="46" Name="Conv_Freq" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="30" />
+      <NameCon UId="46" Name="Conv_Res1" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="31" />
+      <NameCon UId="46" Name="Conv_Res2" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="32" />
+      <NameCon UId="46" Name="Conv_Res3" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="33" />
+      <NameCon UId="46" Name="Conv_Res4" />
+    </Wire>
+    <Wire UId="61">
+      <NameCon UId="46" Name="STATUS_WORD" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="62">
+      <NameCon UId="46" Name="INV_OK" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="63">
+      <NameCon UId="46" Name="FB_RUN" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="64">
+      <NameCon UId="46" Name="HMI_Efficiency" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="46" Name="HMI_Current" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="46" Name="HMI_RPM" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="46" Name="HMI_Power" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="46" Name="HMI_Frequency" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="46" Name="HMI_Res1" />
+      <IdentCon UId="42" />
+    </Wire>
+    <Wire UId="70">
+      <NameCon UId="46" Name="HMI_Res2" />
+      <IdentCon UId="43" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="46" Name="HMI_Res3" />
+      <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="72">
+      <NameCon UId="46" Name="HMI_Res4" />
+      <IdentCon UId="45" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Test network</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="12" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="13" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>
