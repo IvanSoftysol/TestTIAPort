@@ -53,12 +53,10 @@
     </Access>
   </StlStatement>
   <StlStatement UId="24">
-    <StlToken Text="A" />
-    <Access Scope="LocalVariable">
-      <Symbol>
-        <Component Name="temp 2" />
-      </Symbol>
-    </Access>
+    <LineComment Inserted="false">
+      <Text>      A     #"temp 2"</Text>
+    </LineComment>
+    <StlToken Text="COMMENT" />
   </StlStatement>
   <StlStatement UId="28">
     <StlToken Text="Assign" />
